@@ -1,6 +1,6 @@
-# Welcome to Node Express Boilerplate  🦾📚
+# Welcome to Teams Backend  ⚽
 
-This repository contains best development practices for an API-based project built with Node.js and Express.
+This repository contains best development practices for an API-based project built with Node.js and Express. You can retrieve team countries from FIFA 2010 world cup and their players.
 
 ## Features
 
