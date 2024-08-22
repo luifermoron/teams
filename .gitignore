@@ -1,0 +1,137 @@
+# General node_modules (Yarn/Node.js)
+**/node_modules
+**/.yarn/cache
+**/.pnp.*
+**/.pnp.cjs
+**/.pnp.js
+**/.yarn/unplugged
+**/.yarn/build-state.yml
+**/.yarn/install-state.gz
+
+# Yarn logs
+.yarn-integrity
+yarn-error.log
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# macOS Finder files
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# macOS filesystem metadata files
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Backendteams (Node.js, Express.js, Docker)
+backendteams/.env
+backendteams/.env.local
+backendteams/.env.*.local
+backendteams/.cache
+backendteams/.next
+backendteams/.turbo
+backendteams/dist
+backendteams/build
+backendteams/logs
+backendteams/pids
+backendteams/*.log
+backendteams/npm-debug.log*
+backendteams/yarn-debug.log*
+backendteams/yarn-error.log*
+backendteams/.eslintcache
+backendteams/docker-compose.override.yml
+backendteams/.docker
+
+# Docker files
+**/docker-compose.override.yml
+**/docker-compose*.yaml
+**/Dockerfile
+**/Dockerfile.*
+
+# Frontendteams/native (React Native, Expo)
+frontendteams/native/.expo
+frontendteams/native/.expo-shared
+frontendteams/native/.idea
+frontendteams/native/.vscode
+frontendteams/native/.watchmanconfig
+frontendteams/native/.gradle
+frontendteams/native/.cxx
+frontendteams/native/android
+frontendteams/native/ios
+frontendteams/native/expo-service-worker.js
+frontendteams/native/web-build
+frontendteams/native/ios/Pods/
+frontendteams/native/ios/DerivedData/
+frontendteams/native/android/.gradle/
+frontendteams/native/android/app/build/
+frontendteams/native/android/app/release/
+frontendteams/native/android/build/
+frontendteams/native/coverage/
+frontendteams/native/node_modules/
+frontendteams/native/index.android.bundle
+frontendteams/native/index.ios.bundle
+frontendteams/native/index.js.map
+frontendteams/native/index.android.js.map
+frontendteams/native/index.ios.js.map
+frontendteams/native/android/.idea/
+frontendteams/native/ios/build/
+frontendteams/native/ios/*.xcworkspace/xcuserdata/
+frontendteams/native/ios/*.xcworkspace/xcshareddata/
+frontendteams/native/ios/*.xcworkspace/xcuserdata/*.xcuserdatad/
+
+# Expo specific
+frontendteams/native/.expo/
+frontendteams/native/.expo-shared/
+
+# Frontendteams/web (Vite, React)
+frontendteams/web/.env.local
+frontendteams/web/.env.*.local
+frontendteams/web/.cache
+frontendteams/web/.nuxt
+frontendteams/web/.output
+frontendteams/web/dist
+frontendteams/web/build
+frontendteams/web/public
+frontendteams/web/static
+frontendteams/web/coverage
+frontendteams/web/.next
+frontendteams/web/.turbo
+frontendteams/web/vite.config.js
+frontendteams/web/.vite
+frontendteams/web/.eslintcache
+frontendteams/web/*.log
+frontendteams/web/*.local
+frontendteams/web/*.env
+frontendteams/web/node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore Yarn Berry config files
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Ignore build outputs
+**/dist/
+**/build/
