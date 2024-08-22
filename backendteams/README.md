@@ -1,6 +1,6 @@
 # Welcome to Teams Backend  ⚽
 
-This repository contains best development practices for an API-based project built with Node.js and Express. You can retrieve team countries from FIFA 2010 world cup and their players.
+This repository contains best practices for developing an API-based project built with Node.js and Express. You can retrieve team countries from the 2010 FIFA World Cup (when Spain won its first tournament) and their players.
 
 ## Features
 
