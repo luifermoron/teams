@@ -1,9 +1,9 @@
 
 import { useEffect, useCallback } from 'react';
-import { useAppDispatch, useAppSelector } from '../../drivers/redux';
-import { fetchTeams, selectAllTeams, selectLoading, selectRefreshing, setRefreshing } from '../../drivers/redux/teams';
+import { useAppDispatch, useAppSelector } from '../../infraestructure/redux';
+import { fetchTeams, selectAllTeams, selectLoading, selectRefreshing, setRefreshing } from '../../infraestructure/redux/teams';
 import { UseFetchTeamsResult } from './UseFetchTeamsResult';
-import { AppDispatch } from '../../drivers/redux';
+import { AppDispatch } from '../../infraestructure/redux';
 
 export const useFetchTeams = (): UseFetchTeamsResult => {
   const dispatch = useAppDispatch();

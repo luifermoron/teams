@@ -1,6 +1,6 @@
-import ITeam from "../../entities/ITeam";
-import { PLAYER_CLASSNAME, TEAM_CLASSNAME } from "../Constants";
-import IRepository from "../IRepository";
+import ITeam from "../../../domain/entities/ITeam";
+import { PLAYER_CLASSNAME, TEAM_CLASSNAME } from "../../../domain/repositories/Constants";
+import IRepository from "../../../domain/repositories/IRepository";
 const fs = require('fs').promises;
 const path = require('path');
 

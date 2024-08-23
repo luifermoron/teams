@@ -1,6 +1,6 @@
-import ITeam from "../../entities/ITeam";
+import ITeam from "@/lib/domain/entities/ITeam";
 import RemoteRepository from "../RemoteRepository";
-import { GET_TEAMS } from "@/lib/drivers/network/common/endpoints";
+import { GET_TEAMS } from "@/lib/infraestructure/network/common/endpoints";
 
 export default class TeamRepository extends RemoteRepository<ITeam> {
     test() {

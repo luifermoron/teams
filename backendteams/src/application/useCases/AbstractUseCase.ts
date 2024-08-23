@@ -1,4 +1,4 @@
-import IRepository from "../../domain/respositories/IRepository";
+import IRepository from "../../domain/repositories/IRepository";
 
 export default abstract class AbstractUseCases<
   Model,

@@ -1,6 +1,6 @@
-import { getCall } from "../../drivers/network/common";
+import { getCall } from "../../infraestructure/network/common";
 
-import IRepository from "./IRepository";
+import IRepository from "@/lib/domain/repositories/IRepository";
 
 export default abstract class RemoteRepository<Entity> implements IRepository<Entity> {
     async getAll(url: string): Promise<Entity[]> {

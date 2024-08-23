@@ -1,9 +1,9 @@
 import { asClass, InjectionMode, createContainer } from 'awilix';
-import TeamRepository from '../../domain/respositories/FileSystemRepository/TeamRepository';
+import TeamRepository from '../repositories/FileSystemRepository/TeamRepository';
 import TeamUseCasesV1 from '../../application/useCases/v1/TeamUseCases';
 import TeamUseCasesV2 from '../../application/useCases/v2/TeamUseCases';
 import PlayerUseCasesV1 from '../../application/useCases/v1/PlayerUseCase';
-import PlayerRepository from '../../domain/respositories/FileSystemRepository/PlayerRepository';
+import PlayerRepository from '../repositories/FileSystemRepository/PlayerRepository';
 
 const container = createContainer({ injectionMode: InjectionMode.CLASSIC });
 

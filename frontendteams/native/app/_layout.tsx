@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { store } from '@/lib/drivers/redux';
+import { store } from '@/lib/infraestructure/redux';
 import { Provider } from 'react-redux';
 
 

@@ -8,7 +8,7 @@ import { useFetchPlayers, useOnRefresh } from '@/lib/controllers/players';
 import { UseFetchPlayersResult } from '@/lib/controllers/players/UseFetchPlayersResult';
 
 import IPlayer from '@/lib/domain/entities/IPlayer';
-import { useAppDispatch } from '@/lib/drivers/redux';
+import { useAppDispatch } from '@/lib/infraestructure/redux';
 
 
 

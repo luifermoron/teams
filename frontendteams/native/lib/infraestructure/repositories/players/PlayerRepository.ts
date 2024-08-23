@@ -1,5 +1,5 @@
-import { GET_PLAYERS } from "@/lib/drivers/network/common/endpoints";
-import IPlayer from "../../entities/IPlayer";
+import { GET_PLAYERS } from "@/lib/infraestructure/network/common/endpoints";
+import IPlayer from "@/lib/domain/entities/IPlayer";
 import RemoteRepository from "../RemoteRepository";
 
 export default class PlayerRepository extends RemoteRepository<IPlayer> {

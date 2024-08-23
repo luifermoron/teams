@@ -1,6 +1,6 @@
 
 import IPlayer from "../../../domain/entities/IPlayer";
-import PlayerRepository from "../../../domain/respositories/FileSystemRepository/PlayerRepository";
+import PlayerRepository from "../../../infraestructure/repositories/FileSystemRepository/PlayerRepository";
 import AbstractUseCases from "../AbstractUseCase";
 
 export default class PlayerUseCasesV1 extends AbstractUseCases<
