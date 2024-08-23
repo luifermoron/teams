@@ -1,4 +1,4 @@
-import { getCall } from "../../infraestructure/network/common";
+import { getCall } from "../network/common";
 
 import IRepository from "@/lib/domain/repositories/IRepository";
 

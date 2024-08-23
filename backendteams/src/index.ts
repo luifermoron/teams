@@ -8,12 +8,12 @@ import express, { Request, Response, NextFunction } from 'express';
 import helmet from 'helmet';
 const app = express();
 const port = process.env.PORT || 3000;
-import routes from './infraestructure/express/routes';
+import routes from './infrastructure/express/routes';
 const { scopePerRequest, loadControllers } = require('awilix-express');
 const cors = require('cors');
 
-import container from './infraestructure/awilix/container';
-import CORS_OPTIONS from './infraestructure/express/middlewares/cors';
+import container from './infrastructure/awilix/container';
+import CORS_OPTIONS from './infrastructure/express/middlewares/cors';
 
 
 app.use(helmet());
@@ -33,7 +33,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.use(scopePerRequest(container));
-app.use(loadControllers('../src/infraestructure/express/routes/teams/**-**/**-**.**', { cwd: __dirname }));
+app.use(loadControllers('../src/infrastructure/express/routes/teams/**-**/**-**.**', { cwd: __dirname }));
 routes(app);
 
 app.listen(port, () => {

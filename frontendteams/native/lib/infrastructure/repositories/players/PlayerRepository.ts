@@ -1,4 +1,4 @@
-import { GET_PLAYERS } from "@/lib/infraestructure/network/common/endpoints";
+import { GET_PLAYERS } from "@/lib/infrastructure/network/common/endpoints";
 import IPlayer from "@/lib/domain/entities/IPlayer";
 import RemoteRepository from "../RemoteRepository";
 

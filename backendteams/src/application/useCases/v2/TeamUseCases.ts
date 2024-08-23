@@ -1,6 +1,6 @@
 
 import ITeam from "../../../domain/entities/ITeam";
-import TeamRepository from "../../../infraestructure/repositories/FileSystemRepository/TeamRepository";
+import TeamRepository from "../../../infrastructure/repositories/FileSystemRepository/TeamRepository";
 import AbstractUseCases from "../AbstractUseCase";
 
 export type GET_ALL_RESPONSE = {

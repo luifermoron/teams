@@ -6,7 +6,7 @@ import { useFetchTeams, useOnRefresh } from '@/lib/controllers/teams';
 import { UseFetchTeamsResult } from '@/lib/controllers/teams/UseFetchTeamsResult';
 
 import ITeam from '@/lib/domain/entities/ITeam';
-import { useAppDispatch } from '@/lib/infraestructure/redux';
+import { useAppDispatch } from '@/lib/infrastructure/redux';
 import TeamItem from '@/components/teams/TeamItem';
 
 
