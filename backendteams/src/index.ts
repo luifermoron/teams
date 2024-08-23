@@ -7,7 +7,6 @@ dotenv.config({ path: path.join(__dirname, '..', '.env') });
 import express, { Request, Response, NextFunction } from 'express';
 import helmet from 'helmet';
 const app = express();
-const port = process.env.PORT || 3000;
 import routes from './infrastructure/express/routes';
 const { scopePerRequest, loadControllers } = require('awilix-express');
 const cors = require('cors');
@@ -36,6 +35,4 @@ app.use(scopePerRequest(container));
 app.use(loadControllers('../src/infrastructure/express/routes/teams/**-**/**-**.**', { cwd: __dirname }));
 routes(app);
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+export default app;

@@ -1,4 +1,4 @@
-import PlayerRepository from '../../../../infrastructure/repositories/FileSystemRepository/PlayerRepository';
+import PlayerRepository from '../../../../../infrastructure/repositories/FileSystemRepository/PlayerRepository';
 
 //TODO: give support to multiple databases & repositories setup
 const fs = require('fs').promises;

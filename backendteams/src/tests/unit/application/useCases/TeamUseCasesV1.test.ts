@@ -1,6 +1,6 @@
 
-import TeamUseCasesV1 from '../../../application/useCases/v1/TeamUseCases';
-import TeamRepository from '../../../infrastructure/repositories/FileSystemRepository/TeamRepository';
+import TeamUseCasesV1 from '../../../../application/useCases/v1/TeamUseCases';
+import TeamRepository from '../../../../infrastructure/repositories/FileSystemRepository/TeamRepository';
 
 //TODO: give support to multiple databases & repositories setup
 const fs = require('fs').promises;
