@@ -3,7 +3,7 @@ import app from '../../index';
 import server from '../../server';
 
 
-describe("INTEGRATION TESTS: GET /api/teams", () => {
+describe("INTEGRATION TESTS: GET /api/players", () => {
   afterAll(() => {
     server.close();
   });

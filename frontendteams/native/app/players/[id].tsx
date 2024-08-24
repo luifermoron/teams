@@ -14,7 +14,7 @@ import { useAppDispatch } from '@/lib/infrastructure/redux';
 
 export default function PlayersScreen() {
   const { id, name } = useLocalSearchParams();
-  const teamId = parseInt(id, 10);
+  const teamId = parseInt(id as string, 10);
 
   const dispatch = useAppDispatch();
   const onRefresh = useOnRefresh(dispatch, teamId);
@@ -43,6 +43,7 @@ export default function PlayersScreen() {
       {loading ? (
         <View style={styles.loadingContainer}>
           <LottieView
+            testID="lottie-view"
             source={require('@/assets/animations/ball-animation.json')}
             autoPlay
             loop
@@ -51,6 +52,7 @@ export default function PlayersScreen() {
         </View>
       ) : (
         <FlatList
+          testID="players-flatlist"
           data={players}
           renderItem={renderPlayerItem}
           keyExtractor={(item) => item.id.toString()}

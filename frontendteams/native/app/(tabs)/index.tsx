@@ -26,6 +26,7 @@ export default function App() {
       {loading ? (
         <View style={styles.loadingContainer}>
           <LottieView
+            testID="lottie-view"
             source={require('@/assets/animations/ball-animation.json')}
             autoPlay
             loop
@@ -34,6 +35,7 @@ export default function App() {
         </View>
       ) : (
         <FlatList
+          testID="teams-flatlist"
           data={teams}
           renderItem={renderTeamItem}
           keyExtractor={(item) => item.id.toString()}

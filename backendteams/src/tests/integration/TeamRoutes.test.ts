@@ -1,12 +1,7 @@
 import request from 'supertest';
 import app from '../../index'; 
-import server from '../../server';
-
 
 describe("INTEGRATION TESTS: GET /api/teams", () => {
-  afterAll(() => {
-    server.close();
-  });
 
   it("should return a list of teams with version v1", async () => {
     const res = await request(app)
