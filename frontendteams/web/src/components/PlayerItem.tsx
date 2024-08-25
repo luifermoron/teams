@@ -7,7 +7,7 @@ type PlayerItemProps  = {
 }
 
 const PlayerItem: React.FC<PlayerItemProps> = ({ player }: PlayerItemProps) => {
-  const { name, position, age, number, nationality } = player;
+  const { name, position, age, nationality } = player;
   return (
     <Card
       sx={{
@@ -30,9 +30,6 @@ const PlayerItem: React.FC<PlayerItemProps> = ({ player }: PlayerItemProps) => {
           </Typography>
           <Typography variant="body2" color="textSecondary">
             Age: {age}
-          </Typography>
-          <Typography variant="body2" color="textSecondary">
-            Number: {number}
           </Typography>
           <Typography variant="body2" color="textSecondary">
             Nationality: {nationality}

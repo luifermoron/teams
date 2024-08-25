@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { render, waitFor } from '@testing-library/react-native';
-import PlayersScreen from './[id]';
+import PlayersScreen from '../[id]';
 import { Provider } from 'react-redux';
 import MockAdapter from 'axios-mock-adapter';
 import axios from 'axios';

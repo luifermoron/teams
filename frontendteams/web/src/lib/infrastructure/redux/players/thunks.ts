@@ -3,11 +3,11 @@ import IPlayer from '@/lib/domain/entities/IPlayer';
 import { RootState } from '..';
 
 import { getPlayersUseCase } from '@/lib/application/useCases/players';
-
+//@ts-ignore
 export const playersCalls = (playersAdapter: EntityAdapter<IPlayer, number>) => {
+  /*@ts-ignore*/
   const fetchPlayers = createAsyncThunk('players/fetchPlayers', async (teamId: number, { getState }) => {
     const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-    const state = getState() as RootState;
     const DELAYED_FOR_ANIMATION = 1500;
     const [players] = await Promise.all([
         getPlayersUseCase(teamId),

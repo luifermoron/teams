@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import { render, waitFor } from '@testing-library/react-native';
 import App from '..';
 import { store } from '@/lib/infrastructure/redux';

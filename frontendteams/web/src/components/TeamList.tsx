@@ -21,11 +21,13 @@ const TeamList: React.FC = () => {
       }}
     >
       {loading ? (
-        <CircularProgress/>
+        <CircularProgress data-testid="progressbar"/>
       ) : (
         <Box sx={{ width: '100%', maxWidth: 600 }}>
           {teams.map(team => (
-            <TeamItem team={team}/>
+            <div key={team.id} data-testid="team-item">
+                <TeamItem team={team} />
+            </div>
           ))}
         </Box>
       )}
