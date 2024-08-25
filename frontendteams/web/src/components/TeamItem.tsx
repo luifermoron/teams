@@ -1,8 +1,7 @@
-// src/components/TeamItem.tsx
 import React from 'react';
-import { Card, CardContent, Typography, Box } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Card, CardContent, Typography } from '@mui/material';
 import ITeam from '../lib/domain/entities/ITeam';
+import { useNavigate } from 'react-router-dom';
 
 type TeamItemProps = {
     team: ITeam
@@ -10,29 +9,28 @@ type TeamItemProps = {
 
 const TeamItem: React.FC<TeamItemProps> = ({team}: TeamItemProps) => {
    const { id, name, group, coach } = team;
+   const navigate = useNavigate();
+
+   const handleClick = () => {
+     navigate(`/players/${id}`, {
+       state: { name },
+     });
+   };
   return (
     <Card
       sx={{
         marginBottom: 2,
-        textAlign: 'left',
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-        transition: 'box-shadow 0.3s ease-in-out',
-        '&:hover': {
-          boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.2)',
-        },
+        padding: 2,
+        backgroundColor: '#f9f9f9',
+        borderRadius: '8px',
+        boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.4)',
+        cursor: 'pointer'
       }}
-      component={Link}
-      to={`/players/${id}`}
+      className="clickable-card"
+      onClick={handleClick}
     >
-      <CardContent>
-        <Box
-          sx={{
-            padding: 2,
-            backgroundColor: '#f9f9f9',
-            borderRadius: '8px',
-            boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.4)',  // Darker shadow as requested
-          }}
-        >
+      <CardContent
+      >
           <Typography variant="h6" gutterBottom>
             {name}
           </Typography>
@@ -42,7 +40,6 @@ const TeamItem: React.FC<TeamItemProps> = ({team}: TeamItemProps) => {
           <Typography variant="body2" color="textSecondary">
             Coach: {coach}
           </Typography>
-        </Box>
       </CardContent>
     </Card>
   );
