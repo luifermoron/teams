@@ -10,7 +10,7 @@ import { UseFetchPlayersResult } from '@/lib/controllers/players/UseFetchPlayers
 import IPlayer from '@/lib/domain/entities/IPlayer';
 import { useAppDispatch } from '@/lib/infrastructure/redux';
 
-
+import styles from '../../styles/Players.styles';
 
 export default function PlayersScreen() {
   const { id, name } = useLocalSearchParams();
@@ -64,34 +64,3 @@ export default function PlayersScreen() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-    backgroundColor: '#fff',
-  },
-  playerItem: {
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
-  },
-  playerName: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  playerDetail: {
-    fontSize: 14,
-    color: '#555',
-    marginTop: 4,
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  lottieAnimation: {
-    width: 200,
-    height: 200,
-  },
-});

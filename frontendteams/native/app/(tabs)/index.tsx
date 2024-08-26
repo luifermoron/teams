@@ -9,6 +9,8 @@ import ITeam from '@/lib/domain/entities/ITeam';
 import { useAppDispatch } from '@/lib/infrastructure/redux';
 import TeamItem from '@/components/teams/TeamItem';
 
+import styles from '../../styles/Home.styles';
+
 
 export default function App() {
   
@@ -47,31 +49,4 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingTop: 50,
-  },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginBottom: 20,
-  },
-  teamItem: {
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  lottieAnimation: {
-    width: 200,
-    height: 200,
-  },
-});
 
